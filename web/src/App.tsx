@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 interface Props {
-  id?: string;
+    message?: string;
   count?: number;
 }
 
 const App = (props: Props) => {
-  const id = props.id || '';
+  const message = props.message || 'Hello?';
   const [count, setCount] = useState(props.count || 0);
   const increment = () => setCount(c => ++c);
   return (
     <div className="App">
-      <p>{id}</p>
+      <p>{message}</p>
       <button onClick={increment}>{count}</button>
     </div>
   );

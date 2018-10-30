@@ -3,7 +3,7 @@ import * as Fastify from 'fastify';
 const fastify = Fastify({ logger: true });
 
 fastify.get('/', (req, res) => {
-  res.send({ message: 'hello world' });
+  res.send({ message: 'hello world from server side!' });
 });
 
 fastify.listen(3001, (err, address) => {
