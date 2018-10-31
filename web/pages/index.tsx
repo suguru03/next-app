@@ -15,6 +15,6 @@ export default class extends React.Component<Props> {
   }
 
   render() {
-    return <App message={this.props.message} />;
+    return <App message={this.props.message} count={0}/>;
   }
 }
